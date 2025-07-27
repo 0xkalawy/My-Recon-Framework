@@ -30,4 +30,4 @@ if __name__ == "__main__":
     run("cat subdomains.* > subdomains", shell=True)
     run("sort -u subdomains > x && mv x subdomains", shell=True)
     recursive("subdomains")
-    run("ffuf -u https://FUZZ1.FUZZ2 -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-5000.txt:FUZZ1 -w subdomains.alot:FUZZ2",shell=True)
+    run("ffuf -u https://FUZZ1.FUZZ2 -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-5000.txt:FUZZ1 -w subdomains.alot:FUZZ2 ",shell=True)
