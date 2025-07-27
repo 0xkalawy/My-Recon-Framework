@@ -1,0 +1,8 @@
+#!/bin/bash
+
+httpx -l $1 -o activesubs -threads 200 -status-code -follow-redirects -p 443,80,8888,8080,8443,8000
+ 
+
+cat $1 | gau --subs > urls.gau
+cat $1 | katana > urls.katana
+
