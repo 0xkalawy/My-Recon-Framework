@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # This script does fuzzing on the domains that has more than 3 parts.
 
 from sys import argv
